@@ -1,0 +1,8 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+	"name": "SPI Zettlr Dev Container",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+  "remoteUser": "node"
+}
