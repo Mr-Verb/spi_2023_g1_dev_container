@@ -20,9 +20,6 @@ RUN yarn add electron-builder --dev
 WORKDIR /usr/app
 RUN npm install -g nodehun@latest
 
-# download Zettlr
-WORKDIR /home/Zettlr
-CMD npm install && npm audit fix --force && yarn install --frozen-lockfile ; sleep infinity
 
 # Set `DEVCONTAINER` environment variable to help with orientation
 ENV DEVCONTAINER=true

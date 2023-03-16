@@ -20,6 +20,6 @@ case $OSTYPE in
         ;;
 esac
 
-docker build -t spi_2023_g1_dev_container_image:1.1.11 .
-docker run --name dev_container -v $NEEDED_PATH/Zettlr:/home/Zettlr -d spi_2023_g1_dev_container_image:1.1.11
+docker build -t spi_2023_g1_dev_container_image:1.1.13 .
+docker run -d -it --name dev_container --mount type=bind,source="$NEEDED_PATH",target=/home/Zettlr spi_2023_g1_dev_container_image:1.1.13
 echo "Now click the the green connection button in the bottom right corner and select 'attach to running container'"
