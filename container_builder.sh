@@ -14,9 +14,13 @@ case $OSTYPE in
         ;;
     darwin*)
         echo OSX
+        NEEDED_PATH=$PWD/Zettlr
+        echo $NEEDED_PATH
         ;;
     linux*)
         echo linux
+        NEEDED_PATH=$PWD/Zettlr
+        echo $NEEDED_PATH
         ;;
 esac
 
